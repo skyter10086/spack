@@ -83,7 +83,6 @@ def config_directory(tmpdir_factory):
                                        'modules.yaml')
     packages_yaml = config_path.join('spack', 'defaults', 'packages.yaml')
     config_yaml = config_path.join('spack', 'defaults', 'config.yaml')
-    repos_yaml = config_path.join('spack', 'defaults', 'repos.yaml')
     tmpdir.ensure('site', dir=True)
     tmpdir.ensure('user', dir=True)
     tmpdir.ensure('site/%s' % platform.system().lower(), dir=True)
@@ -92,7 +91,6 @@ def config_directory(tmpdir_factory):
                                      'modules.yaml'))
     packages_yaml.copy(tmpdir.join('site', 'packages.yaml'))
     config_yaml.copy(tmpdir.join('site', 'config.yaml'))
-    repos_yaml.copy(tmpdir.join('site', 'repos.yaml'))
     yield tmpdir
     tmpdir.remove()
 
