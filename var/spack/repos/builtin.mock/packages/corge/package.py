@@ -14,7 +14,8 @@ class Corge(Package):
     url      = "https://github.com/gartung/corge/releases/download/v3.0.0/corge-3.0.0.tar.gz"
 
     version(
-        '3.0.0', sha256='fdd4b03b38dcc6650366a6469898ba89714777647687ae28f0ae55480ae5b393')
+        '3.0.0', sha256='fdd4b03b38dcc6650366a6469898ba89714777647687ae28f0ae55480ae5b393',
+        url="https://github.com/gartung/corge/releases/download/v3.0.0/corge-3.0.0.tar.gz")
 
     depends_on('quux')
 

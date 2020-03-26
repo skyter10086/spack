@@ -13,7 +13,8 @@ class Quux(Package):
     homepage = "https://www.example.com"
     url      = "https://github.com/gartung/quux/releases/download/v3.0.0/quux-3.0.0.tar.gz"
 
-    version('3.0.0', sha256='92910c1045fb2722fedbab6d679d3bcb52a1f6d5338ee61514f5e587c7eb5e57')
+    version('3.0.0', sha256='92910c1045fb2722fedbab6d679d3bcb52a1f6d5338ee61514f5e587c7eb5e57',
+            url="https://github.com/gartung/quux/releases/download/v3.0.0/quux-3.0.0.tar.gz")
 
     depends_on('garply')
 
