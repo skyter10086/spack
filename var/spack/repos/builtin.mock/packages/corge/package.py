@@ -1,3 +1,9 @@
+# Copyright 2013-2020 Lawrence Livermore National Security, LLC and other
+# Spack Project Developers. See the top-level COPYRIGHT file for details.
+#
+# SPDX-License-Identifier: (Apache-2.0 OR MIT)
+
+
 from spack import *
 
 
@@ -11,7 +17,6 @@ class Corge(Package):
         '3.0.0', sha256='fdd4b03b38dcc6650366a6469898ba89714777647687ae28f0ae55480ae5b393')
 
     depends_on('quux')
-
 
     def install(self, spec, prefix):
         install_tree(self.stage.source_path, prefix)
